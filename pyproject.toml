@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmd-vault"
+version = "0.1.0"
+description = "Fast local CLI command history & winning methodology memory system for AI agents & developers"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Modus ZNZ", email = "dev@modus.znz" }
+]
+keywords = ["cli", "terminal", "ai-agents", "command-memory", "python"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Shells",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+cm = "cmd_vault.cli:main"
+cmd-vault = "cmd_vault.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/modus-znz/cmd-vault"
+Repository = "https://github.com/modus-znz/cmd-vault.git"
+"Bug Tracker" = "https://github.com/modus-znz/cmd-vault/issues"
