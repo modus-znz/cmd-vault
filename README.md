@@ -1,13 +1,13 @@
 # cmd-vault ⚡
 
-> **Fast local CLI command history & winning methodology memory system for AI agents & developers**
+**Fast local CLI command history & winning methodology memory system for AI agents & developers.**
 
 [![CI Status](https://github.com/modus-znz/cmd-vault/workflows/CI/badge.svg)](https://github.com/modus-znz/cmd-vault/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Code Style: Flake8](https://img.shields.io/badge/code%20style-clean-green.svg)](https://github.com/modus-znz/cmd-vault)
 
-`cmd-vault` is a zero-dependency, pure Python stdlib engine designed to give AI agents and terminal power-users instant recall of complex CLI workflows, winning commands, and operational methodology patterns. Powered by SQLite WAL indexing, SHA-256 stream deduplication, and subword n-gram vector matching, `cmd-vault` replaces fragmented shell history files with structured, searchable memory.
+`cmd-vault` is a zero-dependency, pure Python stdlib engine designed to give AI agents and terminal power-users instant recall of complex CLI workflows, winning commands, and operational methodology patterns.
 
 ---
 
@@ -17,6 +17,7 @@
 - [Architecture](#architecture)
 - [Quickstart](#quickstart)
 - [Usage](#usage)
+- [Configuration](#configuration)
   - [Suggesting Commands](#suggesting-commands)
   - [Recording Commands](#recording-commands)
   - [Searching Vault](#searching-vault)
@@ -161,6 +162,17 @@ Export vault entries to a compressed Gzip JSON backup archive:
 ```bash
 cm compress
 ```
+
+---
+
+## Configuration
+
+Configure environment variables or default vault paths:
+
+| Variable | Description | Default |
+|---|---|---|
+| `CMD_VAULT_PATH` | Path to SQLite WAL database file | `~/.cm/memory.db` |
+| `CMD_VAULT_MAX_RESULTS` | Default number of search results returned | `5` |
 
 ---
 
