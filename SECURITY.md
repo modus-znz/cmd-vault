@@ -12,7 +12,7 @@ Security of `cmd-vault` is taken seriously. If you discover a security vulnerabi
 
 ### Disclosure Process
 
-1. Email your report to `dev@modus.znz` or submit a private security advisory on GitHub.
+1. Email your report to `security@moduslabs.dev` or submit a private security advisory on GitHub.
 2. Include a detailed description of the vulnerability, steps to reproduce, and any potential impact.
 3. We will acknowledge receipt within 48 hours and work on a security fix promptly.
 

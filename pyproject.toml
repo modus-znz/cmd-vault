@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
-    { name = "Modus ZNZ", email = "dev@modus.znz" }
+    { name = "Modus ZNZ", email = "security@moduslabs.dev" }
 ]
 keywords = ["cli", "terminal", "ai-agents", "command-memory", "python"]
 classifiers = [
